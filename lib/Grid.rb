@@ -2,7 +2,7 @@
 
 class Grid
 
-  def checkBox(pBox)
+  def translateBox(pBox)
     if pBox == 1
       return [0,0]
     end
@@ -35,15 +35,19 @@ class Grid
   end
 
   def getBox(pBox)
-    posicion=checkBox(pBox)
-    var =  @@tablero[posicion[0]]
-    var2 = var[posicion[1]]  
+    posicion=translateBox(pBox)
+    @@tablero[posicion[0]][posicion[1]]
   end
 
   def setBox(pArray, pValue)
-    "X"
+    @@tablero[pArray[0]][pArray[1]] = pValue
   end
   
+  def showGrid
+    @@tablero.each do |loc|  
+      puts "#{loc}"
+    end  
+  end
 
 end
 
