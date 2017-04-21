@@ -1,4 +1,4 @@
-@@tablero = [['v', 'v','v'],['v', 'v','v'],['v', 'v','v']]
+@@tablero = [['v', 'v','v'],['z', 'z','z'],['y', 'y','y']]
 
 class Grid
 
@@ -40,6 +40,10 @@ class Grid
     var2 = var[posicion[1]]  
   end
 
+  def setBox(pArray, pValue)
+    "X"
+  end
+  
 
 end
 

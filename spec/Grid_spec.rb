@@ -57,4 +57,17 @@ describe "Lectura de Tablero" do
   end
 end
 
+describe "Escritura en tablero" do 
+  it "Recibo posicion [0,0] y escribo X" do
+    grid = Grid.new
+    expect(grid.setBox([0,0],"X")).to eq 'X'
+  end
+
+  it "Recibo posicion [1,1] y escribo O" do
+    pending
+    grid = Grid.new
+    expect(grid.setBox([1,1],"O")).to eq 'O'
+  end
+end
+
 
