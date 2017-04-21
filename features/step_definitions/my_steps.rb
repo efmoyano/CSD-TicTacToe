@@ -11,7 +11,6 @@ When(/^Presiono el Boton 1$/) do
 end
 
 Then(/^Boton (\d+)=X$/) do |marca|
+  
   last_response.body.should =~/#{marca}/m
 end
-
-
