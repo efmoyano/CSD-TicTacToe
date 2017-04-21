@@ -2,27 +2,47 @@
   <body>
     <h1> Tic Tac Toe </h1>
       Version <%= @@version%>
-    <form method="POST" action="/">
+    
     
     <table>
       <tr>
-	<td >  <input type="submit" id="1" value="1">   </input>  </td>
-	<td>  <input type="submit" id="2" value="2"><br> </input>  </td>
-	<td>  <input type="submit" id="3" value="3"><br> </input>  </td>
+        <form method="POST" action="/1">
+	  <td >  <input type="submit" id="1" value="">   </input>  </td>
+	</form>
+        <form method="POST" action="/2">
+          <td>  <input type="submit" id="2" value=""><br> </input>  </td>
+        </form>
+        <form method="POST" action="/3">	
+          <td>  <input type="submit" id="3" value=""><br> </input>  </td>
+        </form>      
       </tr>
 
       <tr>
-	<td>  <input type="submit" id="4" value="4"><br> </input>  </td>
-	<td>  <input type="submit" id="5" value="5"><br> </input>  </td>
-	<td>  <input type="submit" id="6" value="6"><br> </input>  </td>
+<form method="POST" action="/4">
+	<td>  <input type="submit" id="4" value=""><br> </input>  </td>
+</form>
+<form method="POST" action="/5">	
+<td>  <input type="submit" id="5" value=""><br> </input>  </td>
+</form>
+<form method="POST" action="/6">
+	<td>  <input type="submit" id="6" value=""><br> </input>  </td>
+</form>
       </tr>
 
       <tr>
-	<td>  <input type="submit" id="7" value="7"><br> </input>  </td>
-	<td>  <input type="submit" id="8" value="8"><br> </input>  </td>
-	<td>  <input type="submit" id="9" value="9"><br> </input>  </td>
+<form method="POST" action="/7">
+	<td>  <input type="submit" id="7" value=""><br> </input>  </td>
+</form> 
+<form method="POST" action="/8">
+	<td>  <input type="submit" id="8" value=""><br> </input>  </td>
+</form> 
+<form method="POST" action="/9">
+	<td>  <input type="submit" id="9" value=""><br> </input>  </td>
+</form> 
       </tr>
     </table>
-  </form>
+  
+  
+  <h1> Button <%= @@buttonPressed%> pressed </h1>
   </body>
 </html>
