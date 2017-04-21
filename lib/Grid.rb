@@ -1,3 +1,5 @@
+@@tablero = [['v', 'v','v'],['v', 'v','v'],['v', 'v','v']]
+
 class Grid
 
   def checkBox(pBox)
@@ -31,6 +33,13 @@ class Grid
       return [2,2]
     end
   end
+
+  def getBox(pBox)
+    posicion=checkBox(pBox)
+    var =  @@tablero[posicion[0]]
+    var2 = var[posicion[1]]  
+  end
+
 
 end
 

@@ -42,11 +42,19 @@ describe "Dada la coordenada rellenar las casilla" do
     expect(grid.checkBox(9)).to eq [2,2]
   end
 
-
-
-
-
 end
 
+
+describe "Lectura de Tablero" do 
+  it "Recibo 1 y muestro posicion [0,0]" do
+    grid = Grid.new
+    expect(grid.getBox(1)).to eq 'v'
+  end
+
+  it "Recibo 2 y muestro posicion [0,1]" do
+    grid = Grid.new
+    expect(grid.getBox(2)).to eq 'v'
+  end
+end
 
 
