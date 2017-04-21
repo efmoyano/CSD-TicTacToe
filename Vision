@@ -1,0 +1,10 @@
+Vision
+
+Realizaremos un Juego de Ta-te-ti donde interactuan 2 jugdores personas fisicas.
+Jugaran de a uno por vez hasta completar el tablero o lograr 3 casillas en linea horizontal, vertical o diagonal. 
+
+Los resultados posibles son:
+- Empate: Se completan los casilleros del tablero no ligrando ningun jugador conseguir las 3 casillas en linea.
+- Ganador A: Consigue los 3 casilleros en linea antes de que lo consiga el Jugador B.
+- Ganador B: Consigue los 3 casilleros en linea antes de que lo consiga el Jugador A.
+
